@@ -18,9 +18,17 @@
 # "Your username must be no longer than 12 characters long!"
 
 ###
-
 puts "Challenge 1"
 puts "Please enter a username..."
+username = gets.chomp.to_s
+
+if username.length < 6
+    puts "Your username is too short"
+elsif username.length > 12 
+    puts "Your username is too long"
+else
+    puts "@" + username.downcase
+end
 
 # 2.
 
@@ -42,3 +50,51 @@ puts "Please enter a username..."
 
 puts "Challenge 2"
 puts "Please enter a menu option"
+
+selection = gets.chomp.to_s
+
+
+if selection == "A" or selection == "a"
+    puts "create new post"
+elsif selection == "B" or selection == "b"
+    puts "edit post"
+elsif selection == "C" or selection == "c"
+    puts "Are you sure you want to delete this post?"
+elsif selection == "D" or selection == "d"
+    puts "heart post"
+elsif selection == "E" or selection == "e"
+    puts "un-heart post" 
+end
+
+deletion = gets.chomp.to_s
+if deletion == "Y" or deletion == "y"
+    puts "Post deleted"
+elsif deletion == "N" or deletion == "n"
+    puts "Post not deleted"
+end
+
+puts "Challenge 2"
+puts "Please enter a menu option"
+
+selection = gets.chomp.to_s
+
+case selection
+    when "A", "a"
+        puts "create new post"
+    when "B", "b"
+        puts "edit post"
+    when "C", "c"
+        puts "Are you sure you want to delete this post?"
+    when "D", "d"
+        puts "heart post"
+    when "E", "e"
+        puts "un-heart post" 
+end
+
+deletion = gets.chomp.to_s
+case deletion
+    when "Y", "y"
+        puts "Post deleted"
+    when "N", "n"
+        puts "Post not deleted"
+end
