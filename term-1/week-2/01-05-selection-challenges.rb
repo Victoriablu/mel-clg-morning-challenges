@@ -27,7 +27,7 @@ if username.length < 6
 elsif username.length > 12 
     puts "Your username is too long"
 else
-    puts "@" + username.downcase
+    puts "Your new username is @" + username.downcase
 end
 
 # 2.
@@ -64,6 +64,7 @@ elsif selection == "D" or selection == "d"
     puts "heart post"
 elsif selection == "E" or selection == "e"
     puts "un-heart post" 
+else "Invalid menu option"
 end
 
 deletion = gets.chomp.to_s

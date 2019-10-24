@@ -1,0 +1,19 @@
+eiffel_tower_height = 300m
+eiffel_tower_height = 300
+big_ben = 96
+taj_mahal = 73
+total_landmark_height = eiffel_tower_height + big_ben + taj_mahal
+mount_everest = 8848
+k2 = 8611
+kangchenjunga = 8586
+total_mountain_height = mount everest + k2 + kangchenjunga
+total_mountain_haight = + mount_everest + k2 + kangchenjunga
+earth_diameter = 12742
+earth_to_moon = 384400
+earth_to_sun = 149600000
+earth_diameter / earth_to_moon
+earth_diameter * earth_to_moon
+earth_to_moon / earth_diameter
+earth_to_sun / earth_diameter
+Kernel.at_exit {File.open("irb.log", "w") do |f| f<< Readline::HISTORY.to_a.join("\n") end}
+exit
