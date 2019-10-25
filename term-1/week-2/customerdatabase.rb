@@ -1,7 +1,7 @@
 counter = 0
 customer_data = []
 
-while counter < 10
+2.times do
 puts "Enter customer data? y/n?"
 data_entry = gets.chomp
 
@@ -22,7 +22,6 @@ elsif data_entry == "n"
 
 else puts "Not a valid response"
 end
-counter += 1
 end
 puts customer_data
 

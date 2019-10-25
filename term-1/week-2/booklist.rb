@@ -1,7 +1,9 @@
 book_list = ["Harry Potter","Pride and Prejudice","I am number 4","The shadowmagic trilogy","The mists of avalon"]
-book_list.insert(1,"J.K. Rowling")
-book_list.insert(3,"Jane Austen")
-book_list.insert(5,"Pittacus Lore")
-book_list.insert(7,"John Lenahan")
-book_list.insert(9,"Marion Zimmer Bradley")
-puts book_list
+author_list = ["J.K. Rowling","Jane Austen","Pittacus Lore","John Lenahan","Marion Zimmer Bradley"]
+
+combined_list = []
+
+while combined_list.length > book_list.length
+    combined_list.push(book_list + " by " + author_list)
+end
+puts combined_list
