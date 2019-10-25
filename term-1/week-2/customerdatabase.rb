@@ -3,14 +3,14 @@ customer_data = []
 
 while counter < 10
 puts "Enter customer data? y/n?"
-data_entry = gets.chomp.to_s
+data_entry = gets.chomp
 
 if data_entry == "y"
     puts "What is your first name?"
-    first_name = gets.chomp.to_s
+    first_name = gets.chomp
 
     puts "What is your last name?"
-    last_name = gets.chomp.to_s
+    last_name = gets.chomp
 
     full_name = first_name + " " + last_name
 
