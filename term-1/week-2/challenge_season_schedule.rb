@@ -1,17 +1,34 @@
-season = ["Summer","Autumn","Winter","Spring"]
-days_of_year = [0...90,91...180,181...270,271...365]
-time_of_day = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,22,23]
-result = []
-day_time = []
-
 puts "What day of the year is it? 0-365"
-day = gets.chomp.to_i
-day_time.push(day)
-puts "What time of day is it? 0-23"
-time = gets.chomp.to_i
-day_time.push(time)
+day_of_year = gets.chomp.to_i
 
-output = day_time.map do |day,time|
-    season[season]    
+puts "What time of day is it? 0-23"
+time_of_day = gets.chomp.to_i
+
+season = "unknown"
+day_greeting = "unknown"
+a_particle = "a"
+
+case day_of_year
+when 0...90
+    season = "summer"
+when 91...180
+    season = "autumn"
+    a_particle = "an"
+when 181...271
+    season = "winter"
+when 271...366
+    season = "spring"
+else puts "Not a day of the year"
 end
-puts ("The season is #{output}")
+
+case time_of_day
+when 0...12
+    day_greeting = "morning"
+when 13...17
+    day_greeting = "afternoon"
+when 18...23
+    day_greeting = "evening"
+else puts "Not a time of day"
+end
+
+puts("It's a #{season} #{day_greeting}")
