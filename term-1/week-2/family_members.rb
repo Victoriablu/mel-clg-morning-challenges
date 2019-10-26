@@ -5,7 +5,7 @@ family = {
     uncles: ["Frank" , "Rob" , "David"]
 }
 
-puts "What family list would you like? 0,1, or 2"
+puts "Which family list would you like? 0, 1, or 2"
 selection = gets.chomp.to_i
 
 family_output = []
