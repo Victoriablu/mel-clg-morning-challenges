@@ -1,4 +1,3 @@
-counter = 0
 customer_data = []
 
 2.times do
