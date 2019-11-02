@@ -38,6 +38,13 @@ class Dog
         @distance_walked += number
         "Your dog has walked #{@distance_walked} kms"
     end
+
+    def walk_all_dogs
+        for each 
+            number = gets.chomp.to_i
+            walk_dog(number)
+        end
+    end
 end
 
   my_dog = Dog.new("Snoopy", "Beagle", 6 , "Brown", "Medium", "F", 2)
@@ -57,9 +64,7 @@ puts dog_name_and_age(obi)
 puts obi.name_color
 puts obi.walk_dog(1)
 
-for each 
-    number = gets.chomp.to_i
-    walk_dog(number)
+
     
 
   
