@@ -2,6 +2,11 @@ GEM
   remote: https://rubygems.org/
   specs:
     colorize (0.8.1)
+    concurrent-ruby (1.1.5)
+    faker (2.7.0)
+      i18n (>= 1.6, < 1.8)
+    i18n (1.7.0)
+      concurrent-ruby (~> 1.0)
     programmer_joke (0.0.3)
 
 PLATFORMS
@@ -9,6 +14,7 @@ PLATFORMS
 
 DEPENDENCIES
   colorize (~> 0.8.1)
+  faker (~> 2.7)
   programmer_joke (~> 0.0.3)
 
 BUNDLED WITH
